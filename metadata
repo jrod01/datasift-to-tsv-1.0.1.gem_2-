@@ -1,0 +1,100 @@
+--- !ruby/object:Gem::Specification
+name: datasift-to-tsv
+version: !ruby/object:Gem::Version
+  hash: 21
+  segments:
+  - 1
+  - 0
+  - 1
+  version: 1.0.1
+platform: ruby
+authors:
+- Asher
+autorequire:
+bindir: bin
+cert_chain: []
+
+date: 2012-02-12 00:00:00 Z
+dependencies:
+- !ruby/object:Gem::Dependency
+  name: datasift
+  prerelease: false
+  requirement: &id001 !ruby/object:Gem::Requirement
+    none: false
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        hash: 3
+        segments:
+        - 0
+        version: "0"
+  type: :runtime
+  version_requirements: *id001
+- !ruby/object:Gem::Dependency
+  name: highline
+  prerelease: false
+  requirement: &id002 !ruby/object:Gem::Requirement
+    none: false
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        hash: 3
+        segments:
+        - 0
+        version: "0"
+  type: :runtime
+  version_requirements: *id002
+description: Expects CDSL input.
+email: asher@ridiculouspower.com
+executables:
+- datasift-to-tsv
+- datasift-to-tsv-process
+extensions: []
+
+extra_rdoc_files: []
+
+files:
+- bin/datasift-to-tsv-process
+- bin/datasift-to-tsv
+- lib/datasift-to-tsv.rb
+- lib/datasift-to-tsv/DataSiftToTSV/Stream/PostProcessor.rb
+- lib/datasift-to-tsv/DataSiftToTSV/Stream/Day.rb
+- lib/datasift-to-tsv/DataSiftToTSV/Stream.rb
+- lib/datasift-to-tsv/DataSiftToTSV/Configuration.rb
+- lib/datasift-to-tsv/DataSiftToTSV.rb
+- README.rdoc
+homepage: ""
+licenses: []
+
+post_install_message:
+rdoc_options: []
+
+require_paths:
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement
+  none: false
+  requirements:
+  - - ">="
+    - !ruby/object:Gem::Version
+      hash: 3
+      segments:
+      - 0
+      version: "0"
+required_rubygems_version: !ruby/object:Gem::Requirement
+  none: false
+  requirements:
+  - - ">="
+    - !ruby/object:Gem::Version
+      hash: 3
+      segments:
+      - 0
+      version: "0"
+requirements: []
+
+rubyforge_project: datasift-to-tsv
+rubygems_version: 1.8.24
+signing_key:
+specification_version: 3
+summary: Streams DataSift to TSV files.
+test_files: []
+

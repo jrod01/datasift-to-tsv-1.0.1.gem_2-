@@ -1,0 +1,23 @@
+== datasift-to-tsv
+
+Takes CDSL for DataSift stream and records all interactions for stream, translating them to TSV at the end of each day.
+
+Allows administration of multiple DataSift streams to TSV files.
+
+== Install
+
+* sudo gem install datasift-to-tsv
+
+* create ~/.datasift.config.yml - included .datasift.config.example.yml is configured for GQRR purposes.
+
+== Usage
+
+Two binaries are provided:
+
+* datasift-to-tsv
+
+Launches management interface.
+
+* datasift-to-tsv-process
+
+Run in datasift-to-tsv output directory for date or specify date directory to process files to TSV. This is only necessary if something unusual has happened and files were not automatically processed.

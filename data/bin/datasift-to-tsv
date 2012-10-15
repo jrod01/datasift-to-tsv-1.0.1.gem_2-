@@ -1,0 +1,7 @@
+#!/bin/env ruby
+
+base_path = File.expand_path( File.dirname( __FILE__ ) )
+
+require File.join( base_path, '../lib/datasift-to-tsv.rb' )
+
+DataSiftToTSV.new
